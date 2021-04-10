@@ -8,6 +8,16 @@ public class DemoResource {
 	
 	@GetMapping("/")
 	public String Home() {
-		return "Homee";
+		return "Homee for All";
+	}
+	
+	@GetMapping("/user")
+	public String Homeuser() {
+		return "Homee for User";
+	}
+	
+	@GetMapping("/admin")
+	public String Homeadmin() {
+		return "Homee for Admin";
 	}
 }
